@@ -1,24 +1,29 @@
-# README
+# ＜favorite time>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+自分の「お気に入りの時間の過ごし方」を投稿して、何かしたいと思った時にランダムに表示して提案してくれる。
+他のユーザーの「お気に入りの時間の過ごし方」をいいね登録したり、タグ検索できる。
+### サイトテーマ
+あなたのお気に入りの時間の過ごし方を教えてください。久しぶりの休日や、リスケでひょんなことから空いた時間、あなたは何がしたいですか？何をしている時が楽しいですか？読もうと思っていたあの本、漫画、行きたかった場所、過ごしたい時間、普段したい
 
-Things you may want to cover:
+### テーマを選んだ理由
+先日、休日を意識して作ったが、何をして良いかわからず、ただ暑い中外を歩くという不完全燃焼な休日になってしまった。普段、やりたいと思っていること、こんな風にしたい言う「お気に入りの時間の過ごし方」をストックし、いざと言うときに提案してくれるサービスがあれば便利だと考え、このテーマにしました。
+### ターゲットユーザ
+充実した時間を過ごしたい人。時間の過ごし方に迷っている人。
 
-* Ruby version
+### 主な利用シーン
+休日や空いた時間にどう過ごそうか迷っている時、時間の過ごし方を(自分があらかじめ登録したものからランダムで表示)提案してくれる。
+他の人の投稿をタグ検索でき、いいねしたりできる為、アイデアを自分の「お気に入りの時間の過ごし方」に取り入れられる。
 
-* System dependencies
+## 設計書
 
-* Configuration
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 使用素材
+- 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
+- 使用しない場合は、使用素材の項目をREADMEから削除してください。
