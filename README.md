@@ -1,4 +1,4 @@
-# ＜favorite time>
+# favorite time
 
 ## サイト概要
 ### サイトテーマ

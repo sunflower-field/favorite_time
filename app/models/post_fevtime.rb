@@ -1,0 +1,2 @@
+class PostFevtime < ApplicationRecord
+end
