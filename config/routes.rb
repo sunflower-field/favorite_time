@@ -1,14 +1,28 @@
 Rails.application.routes.draw do
-  # devise_for :admins
-  # devise_for :users
 
-  # devise_scope :user do
-  #   post 'users/guest_sign_in', to: 'users/sessions#guest_sign_in'
-  # end
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-#
-devise_for :users
-root to: 'homes#top'
+  devise_for :users, controllers: {
+    registrations: "users/registrations",
+    sessions: 'users/sessions'
+  }
 
+  devise_for :admin, skip: [:registrations, :passwords] ,controllers: {
+    sessions: "admin/sessions"
+  }
+
+  root to: 'homes#top'
+
+  namespace :users do
+    resources :post_favtimes
+    resources :post_comments
+    resources :likes, only: [:create, :destroy]
+    resources :post_tags, only: [:index, :show, :destroy]
+  end
+
+  namespace :admin do
+    root to: 'homes#top'
+    resources :post_favtimes, only: [:index, :show, :edit, :update]
+    resources :users, only: [:index, :show, :edit, :update]
+    resources :post_comments, only: [:index, :show, :destroy]
+  end
 
 end
